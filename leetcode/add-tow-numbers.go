@@ -6,7 +6,6 @@ type MyNode struct {
 }
 
 func AddTowNumberByNodeList(l1 *MyNode, l2 *MyNode) *MyNode {
-	// fmt.Printf("%v", *l1)
 	head := &MyNode{Val: 0, Next: nil}
 	n1, n2, carry, current := 0, 0, 0, head
 	for l1 != nil || l2 != nil || carry != 0 {
@@ -22,7 +21,6 @@ func AddTowNumberByNodeList(l1 *MyNode, l2 *MyNode) *MyNode {
 			n2 = l2.Val
 			l2 = l2.Next
 		}
-		// fmt.Println(*l1, *l2)
 		current.Next = &MyNode{Val: (n1 + n2 + carry) % 10}
 		current = current.Next
 		carry = (n1 + n2 + carry) / 10
