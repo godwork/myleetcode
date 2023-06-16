@@ -9,5 +9,5 @@ import (
 func main() {
 	var s string = "abcaddcbfga"
 	count := leetcode.LengthOfLongestSubStrings(s)
-	fmt.Println("num2:", count)
+	fmt.Println("num4:", count)
 }
