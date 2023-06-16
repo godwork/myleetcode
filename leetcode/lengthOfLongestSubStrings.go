@@ -2,7 +2,7 @@ package leetcode
 
 import "fmt"
 
-// 获取字符窜中，没有重复的字符窜最长长度
+// 获取字符窜中，没有重复的字符窜最长长度 1
 func LengthOfLongestSubStrings(s string) int {
 	// if have no string, return zero
 	if len(s) == 0 {
